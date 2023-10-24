@@ -9,11 +9,57 @@ function Header() {
     setIsOpen(!isOpen);
   };
 
+  // <!DOCTYPE html>
+  // <html lang="en">
+  // <head>
+  //     <meta charset="UTF-8">
+  //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  //     <title>Gradient Border</title>
+  //     <style>
+  //         .gradient-border {
+  //             /* Gradient background */
+  //             background: linear-gradient(to right, red, blue);
+  
+  //             /* Simulating 10px border */
+  //             padding: 10px;
+  
+  //             /* Optional: for content spacing */
+  //             margin: 20px;
+  //         }
+  
+  //         .content {
+  //             /* Set content background to white or any desired color */
+  //             background-color: white;
+  
+  //             /* Content styling, adjust as necessary */
+  //             width: 200px;
+  //             height: 200px;
+  //             border-radius: 10px;
+  //         }
+  //     </style>
+  // </head>
+  // <body>
+  //     <div class="gradient-border">
+  //         <div class="content">
+  //             <!-- Your content goes here -->
+  //         </div>
+  //     </div>
+  // </body>
+  // </html>
+  
+
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
         <NavLink to="/">
-          <img className="w-14" src={logos.logogradient} alt="logo" />
+        {/* <div className="gradient-border">
+          <div className="content">
+
+          </div>
+
+        </div> */}
+
+          <img className="w-80"  src={logos.logo} alt="logo" />
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
@@ -24,6 +70,7 @@ function Header() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
+
             <path
               d="M1.4375 1.3125H14.5625M1.4375 11.3125H14.5625H1.4375ZM1.4375 6.3125H14.5625H1.4375Z"
               strokeWidth="1.875"

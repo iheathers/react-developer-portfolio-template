@@ -3,6 +3,44 @@
 @tailwind components;
 @tailwind utilities;
 
+/* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Border</title>
+    <style> */
+        .gradient-border {
+            /* Gradient background */
+            background: linear-gradient(to right, red, blue);
+
+            /* Simulating 10px border */
+            padding: 10px;
+
+            /* Optional: for content spacing */
+            margin: 20px;
+        }
+
+        .content {
+            /* Set content background to white or any desired color */
+            background-color: white;
+
+            /* Content styling, adjust as necessary */
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+    /* </style>
+</head>
+<body>
+    <div class="gradient-border">
+        <div class="content">
+            <!-- Your content goes here -->
+        </div>
+    </div>
+</body>
+</html> */
+
 .max-width {
   @apply lg:mx-auto lg:px-24 xl:px-48 px-5;
 }
